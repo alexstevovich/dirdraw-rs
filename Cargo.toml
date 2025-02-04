@@ -1,0 +1,17 @@
+[package]
+name = "dirdraw"
+version = "1.0.0"
+authors = ["Alex Stevovich <alex.stevovich@gmail.com>"]
+description = "A CLI tool to draw directory trees in the terminal"
+repository = "https://github.com/alexstevovich/dirdraw-rs"
+homepage = "https://github.com/alexstevovich/dirdraw-rs"
+license = "MIT"
+edition = "2021"
+
+[[bin]]
+name = "dirdraw"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+ignore = "0.4"
